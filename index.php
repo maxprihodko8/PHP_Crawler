@@ -3,7 +3,7 @@
 	echo "<html><title>My parser</title><body>";
 	echo "<h1 style='color:blue'>Скачиваем ссылки</h1>";
 	require_once 'simple_html_dom.php';
-	set_time_limit(600); 
+	//set_time_limit(600); 
 	 /*Подключение к БД*/
 	$link = mysql_connect('127.0.0.1', 'root', '') or die('Could not connect: ' . mysql_error());
 	$db_selected = mysql_select_db('Parserr', $link);
